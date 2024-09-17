@@ -1403,16 +1403,18 @@ a.plyr__control:before {
 }
 @font-face {
   font-family: Helvetica Monospaced W1G;
-  src: url(../fonts/HelveticaMonospacedW1G-Rg_1fb8ea46.woff2) format("woff2"),
-    url(../fonts/HelveticaMonospacedW1G-Rg_ec5a449c.woff) format("woff");
+  /* src: url(../fonts/HelveticaMonospacedW1G-Rg_1fb8ea46.woff2) format("woff2"),
+    url(../fonts/HelveticaMonospacedW1G-Rg_ec5a449c.woff) format("woff"); */
+    src: url(../fonts/ABeeZee-Regular.ttf) format("truetype"),
+    url(../fonts/ABeeZee-Regular.ttf) format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: HelveticaNowDisplay;
-  src: url(../fonts/HelveticaNowDisplay-Black_20bf03d0.woff2) format("woff2"),
-    url(../fonts/HelveticaNowDisplay-Black_6254904e.woff) format("woff");
+  src: url(../fonts/ABeeZee-Regular.ttf) format("truetype"),
+    url(../fonts/ABeeZee-Regular.ttf) format("truetype");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -10902,11 +10904,65 @@ body#tinymce {
     padding-top: 0;
   }
 }
-.aotw:hover .aotw__trig {
-  -webkit-animation: blink 51ms linear infinite;
-  -o-animation: blink 51ms linear infinite;
-  animation: blink 51ms linear infinite;
+.aotw__trig {
+  display: flex;
+  align-items: center;
 }
+
+.stylish-vertical-gradient {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Space between input and button */
+  padding: 30px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient background */
+  border-radius: 12px; /* Rounded corners for the container */
+  width: 350px;
+  margin: 0 auto;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow for depth */
+  color: white;
+  text-align: center;
+}
+
+.zone-input {
+  width: 100%;
+  padding: 14px 18px;
+  font-size: 18px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  background-color: #ffffff; /* Input background color */
+  color: #333; /* Input text color */
+  transition: box-shadow 0.3s ease;
+}
+
+.zone-input:focus {
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+.btn-enter-zone {
+  width: 100%;
+  padding: 14px 18px;
+  font-size: 18px;
+  background-color: #ff4b2b;
+  background-image: linear-gradient(135deg, #ff416c, #ff4b2b); /* Gradient button background */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-enter-zone:hover {
+  background-color: #ff2a1b;
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* Optional: Center the component vertically in the viewport */
+
+
+
 .aotw__trig {
   margin-bottom: 40px;
   text-align: center;
