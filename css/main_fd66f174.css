@@ -10608,6 +10608,7 @@ body.error404 {
   -ms-user-select: none;
   user-select: none;
   font-size: clamp(32px, 12vw, 143px);
+  color: white;
 }
 @media (min-width: 1200px) {
   .display--hero {
